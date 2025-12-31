@@ -15,7 +15,19 @@
     <title>Frontend Mentor | QR code component</title>
 
     <style type="text/css">
+      @font-face {
+        font-family: "Outfit";
+        src: url("fonts/Outfit-Regular.eot");
+        src: url("fonts/Outfit-Regular.eot?#iefix") format("embedded-opentype"),
+          url("fonts/Outfit-Regular.woff") format("woff"),
+          url("fonts/Outfit-Regular.ttf") format("truetype"),
+          url("fonts/Outfit-Regular.svg#Outfit-Regular") format("svg");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
       body {
+        font-family: "Outfit";
         background-color: hsl(212, 45%, 89%);
       }
       .container {
@@ -31,7 +43,7 @@
       .QR {
         width: 250px;
         height: 250px;
-        background-image: url('images/image-qr-code.png');
+        background-image: url("images/image-qr-code.png");
         background-position: center;
         background-size: cover;
         border-style: clear;
@@ -40,11 +52,20 @@
         position: relative;
         top: 10px;
       }
+      .header {
+        width: 230px;
+        text-align: center;
+        border-style: clear;
+        margin: 30px auto 0px auto;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="QR"></div>
+      <div class="header">
+        <h3>Improve your front-end skills by building projects</h3>
+      </div>
     </div>
   </body>
 </html>
